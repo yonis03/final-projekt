@@ -1,5 +1,4 @@
 for (var i=25;i>0;i--){
- slider.settatribute("id", "slider"+1);
  document.getElementById("game").append(slider);
 }
 var slidewidth = 400;
