@@ -1,5 +1,4 @@
 for (var i=25;i>0;i--){
- let slider = document.getelement("div");
  slider.settatribute("class", "slider", "animate");
  slider.settatribute("id", "slider"+1);
  document.getElementById("game").append(slider);
