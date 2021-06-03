@@ -1,0 +1,621 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;600;700&family=Patua+One&family=Marck+Script&display=swap');
+:root{
+    --grey01:rgba(0,0,0,.01);
+    --grey03:rgba(0,0,0,.03);
+    --grey05:rgba(0,0,0,.05);
+    --grey1:rgba(0,0,0,.1);
+    --grey2-5:rgba(0,0,0,.25);
+    --grey5:rgba(0,0,0,.5);
+    --grey7-5:rgba(0,0,0,.75);
+}
+*{
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+	font-family: Comfortaa, sans-serif;
+	outline: none;
+	text-decoration: none;
+	list-style: none;
+	touch-action: manipulation;
+}
+*::selection{
+	background-color: yellow;
+}
+.nav{
+	background-color: white;
+	box-shadow:1px 2px 18px var(--grey1);
+	display: flex;
+} 
+nav{
+	display: flex;
+	justify-content: space-between;
+	width: 700px;
+	margin: auto;
+}
+nav h1{
+	padding: 12px;
+	font-size: 24px;
+	font-family: "Marck Script", sans-serif;
+	color: var(--grey5);
+}
+nav:hover h1{
+	color: var(--grey7-5);
+	cursor: pointer;
+}
+nav h1:hover{
+	color: black;
+}
+nav ul{
+	display: flex;
+	justify-content: flex-end;
+	list-style-type: none;
+}
+nav ul a{
+	padding: 8px 1rem;
+	font-size: 16px;
+	color: var(--grey5);
+}
+nav ul a li{
+	border-radius: 10px;
+	padding: 8px;
+	font-family: "Patua one", sans-serif;
+	border: 2px solid transparent;
+	background-color: var(--grey01);
+}
+nav ul a:hover li{
+	background-color: var(--grey05);
+	color: var(--grey5);
+}
+nav ul a li:hover{
+	background-color: var(--grey1);
+	color: black;
+	cursor: pointer;
+}
+
+
+.content{
+	width: 700px;
+	min-height: 60vh;
+	margin: auto;
+	margin-bottom: 10rem;
+}
+.title{
+	text-align: center;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+.h2{
+	text-align: center;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+.h3{
+	text-align: center;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+.h4{
+	text-align: center;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+.logintable{
+	margin: auto;
+	display: block;
+	width: 300px;
+}
+.logintable .btn{
+	width: 100%;
+	border: none;
+	margin-bottom: 1rem;
+	background-color: var(--grey05);
+	padding: 0.3rem;
+}
+.logininput{
+	width: 100%;
+	padding: 0.3rem;
+	border: none;
+	font-size: 1.2rem;
+	background-color: var(--grey05);
+	margin-bottom: 0.5rem;
+}
+.signUpMsg{
+	color: var(--grey5);
+	font-size: 0.5rem;
+}
+.errorMsg{
+	color: red;
+}
+#games, #videos{
+	margin: auto;
+	padding: 1rem;
+	border-radius: 8px;
+	background-color: var(--grey05);
+}
+#videos{
+	width:440px;
+}
+#games .row a, #videos .row a{
+	color: black;
+	width: 47%;
+}
+#videos .row a{
+	max-width: 200px;
+}
+#videos .row a li{
+	height: 75px !important;
+}
+#games .row a:hover li, #videos .row a:hover li, #playoffsimulator:hover img{
+	background-color: var(--grey05);
+	filter: brightness(0.5);
+}
+#games .row a li, #videos .row a li{
+	height: 150px;
+	/* border: 1px solid var(--grey05); */
+	border-radius: 4px;
+	/* box-shadow:1px 2px 5px var(--grey1); */
+	box-shadow:0px 7px 5px var(--grey1);
+	text-shadow: 0px 0px 10px white;
+	padding: 1rem;
+	margin: 1rem auto;
+	display: block;
+	text-align: center;
+	background-size: cover;
+	background-position: center;
+}
+#games .row, #videos .row{
+	width: auto;
+	display: flex;
+	justify-content: space-around;
+}
+#fall-game li{
+	background-image: url('img/fall-game.gif');
+}
+#div-slider li{
+	background-image: url('img/div-slider.gif');
+}
+#beer-pong li{
+	background-image: url('img/beer-pong.gif');
+}
+#subway-surfers li{
+	background-image: url('img/subway-surfers.gif');
+}
+#fall-gameVid li{
+	background-image: url('img/fall-game.png');
+}
+#div-sliderVid li{
+	background-image: url('img/div-slider.png');
+}
+#beer-pongVid li{
+	background-image: url('img/beer-pong.png');
+}
+#subway-surfersVid li{
+	background-image: url('img/subway-surfers.png');
+}
+
+#account{
+	width: 100%;
+	border-radius: 8px;
+	background-color: var(--grey03);
+}
+#account thead tr th{
+	font-size: 1.5rem;
+	padding-top: 0.5rem;
+	width: 50%;
+}
+#account tbody tr td{
+	text-align: center;
+	padding: 1rem;
+}
+#accountStats{
+	width: 100%;
+	border-radius: 8px;
+	background-color: var(--grey03);
+}
+#accountStats tbody tr td{
+	text-align: center;
+	padding: 1rem;
+	width: 50%;
+}
+#leaderboard{
+	width: 100%;
+	border-radius: 8px;
+	background-color: var(--grey03);
+	padding-bottom: 1rem;
+}
+#leaderboard thead tr th{
+	font-size: 1.5rem;
+	padding-top: 0.5rem;
+	width: 33%;
+}
+#leaderboard tbody tr td{
+	text-align: center;
+	padding: 1rem;
+}
+
+#leaderboardIndividual{
+	width: 100%;
+	border-radius: 8px;
+	background-color: var(--grey03);
+}
+#leaderboardIndividual thead tr th{
+	font-size: 1.5rem;
+	padding-top: 0.5rem;
+	width: 25%;
+}
+#leaderboardIndividual thead tr th:first-child{
+	width: 10%;
+}
+#leaderboardIndividual thead tr th:last-child{
+	width: 50%;
+}
+#leaderboardIndividual tbody tr td{
+	text-align: center;
+	padding: 1rem;
+}
+#name, #email{
+	text-align: center;
+	margin-bottom: 1rem;
+}
+.button{
+	color: black;
+	padding: 0.25rem 1rem;
+	text-align: center;
+	width: 150px;
+	display: block;
+	border-radius: 4px;
+}
+#logout{
+	margin: 5rem auto;
+}
+#logout:hover{
+	background-color: red;
+	color: white;
+}
+#leaderboardlink{
+	background-color: var(--grey03);
+	margin: 1rem auto;
+}
+#leaderboardlink:hover{
+	background-color: var(--grey05);
+}
+.p{
+	text-align: center;
+	margin: 5rem auto 1rem;
+}
+#playoffsimulator{
+	max-width: 460px;
+	margin: auto;
+	background-color: var(--grey05);
+	border-radius: 8px;
+}
+#playoffsimulator img{
+	width: 90%;
+	margin: 1rem auto;
+	/* padding: 1rem; */
+	display: block;
+}
+#indexList{
+	margin: auto;
+	display: block;
+	text-align: center;
+}
+#indexList a, .link{
+	color: black;
+}
+#indexList a li{
+	margin: 1rem auto;
+}
+#indexList a:hover li, .link:hover{
+	cursor: pointer;
+	text-shadow: 0px 0px 4px var(--grey5);
+}
+#counter{
+	text-align: center;
+	display: block;
+	padding-bottom: 0.5rem;
+}
+#updateBtn, #playagame{
+	text-align: center;
+	display: block;
+	padding: 0.5rem 2rem;
+	border: none;
+	background-color: var(--grey03);
+	border-radius: 4px;
+	margin: auto;
+}
+#updateBtn{
+	visibility: hidden;
+}
+#updateBtn:hover, #playagame:hover{
+	background-color: var(--grey05);
+	cursor: pointer;
+}
+#gamesText{
+	background-color: var(--grey05);
+	border-radius: 8px;
+}
+#gamesText div{
+	width: 90%;
+	margin: 1rem auto;
+}
+#gamesText div h2{
+	margin: 0.5rem auto;
+}
+#gamesText div p{
+	line-height: 1.5rem;
+}
+.leaderboardCounter{
+	color: var(--grey7-5);
+}
+#guest{
+	background-color: var(--grey05);
+	width: 300px;
+	margin: 3rem auto;
+	border-radius: 8px;
+	padding: 2rem;
+}
+#guest form{
+	display: flex;
+}
+#guestName{
+	margin: auto;
+	text-align: center;
+	width: 80%;
+	font-size: 1rem;
+}
+#guestSubmit{
+	margin: 1rem auto;
+	text-align: center;
+	width: 20%;
+    background-color: var(--grey05);
+	font-size: 0.8rem;
+	border: none;
+}
+footer{
+	width: 700px;
+	margin: 1rem auto 10rem;
+	display: flex;
+	justify-content: space-between;
+}
+footer #footer{
+	float: right;
+	display: flex;
+}
+#footer li{
+	color: var(--grey5);
+	margin: auto 1rem;
+}
+footer ul a li{
+	border-radius: 10px;
+	padding: 16px;
+	background-color: var(--grey01);
+}
+footer ul a:hover li{
+	background-color: var(--grey05);
+	color: var(--grey5);
+}
+footer ul a li:hover{
+	background-color: var(--grey1);
+	color: black;
+	cursor: pointer;
+}
+.footericon{
+	width: 50px;
+}
+#icons{
+	display: flex;
+}
+#icons svg{
+	width: 50px;
+	height: 50px;
+	margin: auto 0.25rem;
+	fill: var(--grey1);
+}
+#icons a:first-child svg{
+	margin-left: 2.75rem;
+}
+#twitter:hover{
+	fill: #1DA1F2 !important;
+}
+#insta:hover{
+	fill: url(#gradient) !important;
+}
+#youtube:hover{
+	fill: #FF0000 !important;
+}
+
+#icons:hover #twitter, #icons:hover #insta, #icons:hover #youtube{
+	fill: var(--grey5);
+	cursor: pointer;
+}
+.pic{
+	max-width:300px;
+	margin: 2rem auto 1rem;
+	display: block;
+	padding: 1rem ;
+	box-shadow: 0px 0px 10px var(--grey2-5);
+	border-radius: 4px;
+}
+.pic2{
+	display: flex;
+}
+.indlink{
+	color: var(--grey7-5);
+    padding: 1rem; 
+}
+tr:hover .indlink{
+    color: black;
+	background-color: var(--grey05);
+	border-radius: 4px;
+}
+#navButton{
+	display: none;
+}
+footer p{
+	display: none;
+}
+#countdown{
+	position: absolute;
+	width: 100%;
+	left: 49%;
+	margin: auto;
+	font-size: 3rem;
+	display: block;
+}
+#indexlinks a{
+	color: black;
+}
+#indexlinks a:hover h3{
+	background-color: var(--grey1);
+	color: black;
+	cursor: pointer;
+}
+#indexlinks a h3{
+	font-family: "Patua one", sans-serif;
+	max-width: 300px;
+	margin: 1rem auto;
+	color: var(--grey7-5);
+	padding: 1rem;
+	border-radius: 4px;
+	background-color: var(--grey05);
+}
+@media only screen and (max-width: 700px){
+	#game, .game{
+		margin-bottom: 15rem !important;
+	}
+	#games .row, #videos .row{
+		display: block;
+	}
+	#games .row a, #videos .row a{
+		width: auto;
+		display: block;
+	}
+	#games .row a li, #videos .row a li{
+		width: 90%;
+	}
+	.content{
+		width: 90%;
+		margin: auto;
+	}
+	#games, #videos{
+		width: auto;
+	}
+	#navButton{
+		display: inline-block;
+		color: var(--grey2-5);
+		background-color: white;
+		border: none;
+		transform: rotate(90deg);
+		padding: auto 2rem;
+		margin-right: 1rem;
+		font-size: 3rem;
+	}
+	#navButton:active{
+		color: var(--grey7-5);
+	}
+	nav div{
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+	}
+	nav{
+		display: block;
+	}
+	nav ul{
+		display: none;
+	}
+	nav ul a li{
+		margin: auto;
+		width: 80%;
+	}
+	footer{
+		width: auto;
+		margin: 7rem auto 10rem;
+		display: block;
+		justify-content: space-between;
+	}
+	footer #icons{
+		display: flex;
+		justify-content: center;
+	}
+	footer p{
+		color: var(--grey5);
+		margin: 1rem auto;
+		text-align: center;
+		display: block;
+	}
+	#icons a:first-child svg {
+		margin-left: 0rem;
+	}
+	.indlink{
+		color: var(--grey7-5);
+		padding: 0rem;
+	}
+	footer #footer{
+		margin: auto;
+		float: none;
+		text-align: center;
+		display:block;
+	}
+	#reshoot, #restart{
+		margin: -17rem auto 10rem !important;
+	}
+	#guest{
+		background-color: var(--grey05);
+		width: 70%;
+		margin: 3rem auto;
+	}
+	#guest form{
+		display: block;
+	}
+	#guestName{
+		width: 90%;
+		margin: auto;
+		display: block;
+		font-size: 1.8rem;
+	}
+	#guestSubmit{
+		margin: 1rem auto;
+		display: block;
+		text-align: center;
+		width: 60%;
+		font-size: 1.2rem;
+	}
+	#leaderboard thead tr th{
+		font-size: 1rem;
+		width: 33%;
+	}
+	#leaderboard tbody tr td{
+		font-size: 0.6rem;
+	}
+	#leaderboardIndividual tbody tr td{
+		font-size: 8px;
+		padding: 0.3rem !important;
+	}
+	#leaderboardIndividual thead tr th{
+		font-size: 0.8rem;
+		width: 10%;
+	}
+	#leaderboardIndividual thead tr th:first-child{
+		width: 5%;
+	}
+	#leaderboardIndividual thead tr th:last-child{
+		width: 30%;
+	}
+	#videos{
+		width: 200px;
+	}
+	#videos .row a{
+		max-width:175px;
+		margin: auto;
+		margin-bottom: 1rem;
+	}
+	#videos .row a li{
+		height: 65px !important;
+		margin: auto;
+	}
+	.pic2{
+		display: block;
+	}
+}
