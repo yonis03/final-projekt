@@ -1,0 +1,41 @@
+:root{
+    --width: 400px;
+
+}
+*{
+   margin: 0;
+   padding: 0;
+}
+#game{
+    width: 500px;
+    height: 500;
+    margin: auto;
+    border: 1px solid black;
+}
+#btn{
+    font-size: 2rem;
+    padding: 0,5rem 2rem;
+    border: 3px solid black;
+    border-radius: 0,3rem;
+    margin: 1rem auto;
+    display: block;
+    background-color: lightgrey;
+}
+#btn:active{
+    background-color: red;
+}
+.slider{
+    height:20px;
+    width: 100px;
+    background-color: red;
+    position: relative;
+}
+.animate{
+    animation: slide 4s infinite linear;
+
+}
+@keyframes slide{
+    0%{left:0%}
+    50%{left:var(--width)}
+    100%{left:0%}
+}
