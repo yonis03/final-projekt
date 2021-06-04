@@ -1,0 +1,40 @@
+* {
+    stop-opacity :  0 ;
+    margin :  0 ;
+}
+#spel{
+    width:400 px;
+    height:500 px;
+    font:1 px fast svart;
+    margin:0;
+    overflow:dold;
+}
+#block {
+    width:50 px ;
+    height:500 px ;
+    background-color:svart;
+    position:relativ;
+    left:400 px;
+    animation:block 2 s oändlig linjär;
+}
+@keyframes block {
+     0% { vänster : 400 px }
+    100% { vänster : -50 px }
+}
+#hål{
+    width:50 px;
+    height:150 px;
+    background-color:vit;
+    position:relativ;
+    left:400 px;
+    top:-500 px;
+    animation:block 2 s oändlig linjär;
+}
+#karaktär {
+    width:20 px;
+    height:20 px;
+    background-color:röd;
+    position:absolut;
+    top:100 px;
+    padding-inline:50% ;
+}
