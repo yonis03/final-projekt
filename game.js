@@ -22,8 +22,7 @@ hål.addEventListener('animationiteration',()=>{
         karaktär.stil.topp=100 + "px";
         räknare = 0;
     }
-} 
-
+}  , 10 ) ;
 funktionhoppa(); {
     hopp=1;
     låtjumpCount=0;
@@ -38,5 +37,5 @@ funktionhoppa(); {
             jumpCount = 0;
         }
         jumpCount ++;
-    } 
+    } , 10 );
 }
